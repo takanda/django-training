@@ -1,0 +1,20 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: .devcontainer/web/Dockerfile
+    volumes:
+      - ./web:/app
+    ports:
+      - "10000:10000"
+    restart: always
+  
+  api:
+    build:
+      context: .
+      dockerfile: .devcontainer/api/Dockerfile
+    volumes:
+      - ./api:/app
+    ports:
+      - "10001:10001"
+    restart: always
