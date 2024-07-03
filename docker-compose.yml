@@ -18,3 +18,8 @@ services:
     ports:
       - "10001:10001"
     restart: always
+
+  redis:
+    image: redis:latest
+    volumes:
+      - ./web:/data
