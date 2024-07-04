@@ -1,8 +1,7 @@
-from django.http import HttpResponse
-from django.core import management
 from django.shortcuts import render
+import subprocess
 
 
-def test(self):
-    response = management.call_command("api")
-    return HttpResponse(response)
+def test(request):
+    subprocess.Popen(["python", "manage.py", "api"])
+    return render(request, "api/test.html")

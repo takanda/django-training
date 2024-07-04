@@ -2,3 +2,4 @@ django
 pytest
 celery
 redis
+requests
