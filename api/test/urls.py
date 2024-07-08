@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import TestAPI
+from .views import RaiseErrorView
 
 
 urlpatterns = [
-    path("api", TestAPI.as_view()),
+    path("api/<int:code>/<str:msg>", RaiseErrorView.as_view()),
 ]

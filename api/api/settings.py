@@ -123,3 +123,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# status_code
+STATUS_OK = 200
+STATUS_CREATED = 201
+STATUS_BAD_REQUEST = 400
+STATUS_UNAUTHORIZED = 401
+STATUS_METHOD_NOT_ALLOWED = 405
+STATUS_TIMEOUT = 408
+STATUS_CONFLICT = 409
+STATUS_SERVER_ERROR = 500
+STATUS_SERVER_UNAVAILABLE = 503
