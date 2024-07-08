@@ -121,16 +121,21 @@ LOGGING = {
             "class": "logging.StreamHandler",
             "formatter": "verbose",
         },
+        "file": {
+            "class": "logging.FileHandler",
+            "filename": "/var/log/general.log",
+            "level": "DEBUG",
+            "formatter": "verbose",
+        }
     },
     "loggers": {
         "api": {
-            "handlers": ["console"],
+            "handlers": ["file"],
             "level": "DEBUG",
             "propagate": False,
         },
     },
 }
-
 
 
 # status_code
