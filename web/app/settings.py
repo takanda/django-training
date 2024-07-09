@@ -130,7 +130,7 @@ LOGGING = {
     },
     "loggers": {
         "api": {
-            "handlers": ["file"],
+            "handlers": ["console"],
             "level": "DEBUG",
             "propagate": False,
         },
@@ -139,7 +139,16 @@ LOGGING = {
 
 
 # status_code
-BAD_REQUEST = 400
+STATUS_OK = 200
+STATUS_CREATED = 201
+STATUS_BAD_REQUEST = 400
+STATUS_UNAUTHORIZED = 401
+STATUS_METHOD_NOT_ALLOWED = 405
+STATUS_TIMEOUT = 408
+STATUS_CONFLICT = 409
+STATUS_SERVER_ERROR = 500
+STATUS_SERVER_UNAVAILABLE = 503
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/5.0/topics/i18n/
