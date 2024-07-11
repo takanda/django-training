@@ -137,6 +137,9 @@ LOGGING = {
     },
 }
 
+# Log name
+API = "api"
+
 
 # status_code
 STATUS_OK = 200
@@ -148,6 +151,8 @@ STATUS_TIMEOUT = 408
 STATUS_CONFLICT = 409
 STATUS_SERVER_ERROR = 500
 STATUS_SERVER_UNAVAILABLE = 503
+
+CONTENT_TYPE = "application/json"
 
 
 # Internationalization
