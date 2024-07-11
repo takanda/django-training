@@ -1,5 +1,5 @@
 {
-    "name": "waves backend",
+    "name": "django-web-server",
     "dockerComposeFile": [
         "../../docker-compose.yml"
     ],

@@ -26,10 +26,11 @@ class Command(BaseCommand):
 
         s = requests.Session()
         s.headers.update({"Content-Type": "application/json"})
-        retries = Retry(total=1, backoff_factor=1, status_forcelist=[400])
+        retries = Retry(total=5, backoff_factor=1, status_forcelist=[500])
         s.mount('http://', LoggingHTTPAdapter(max_retries=retries))
         try:
             response = s.get("http://api:10001/test/api/400/bad_request")
+            print("response", response)
         except AttributeError as e:
             print(e)
             return
