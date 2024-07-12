@@ -138,7 +138,7 @@ LOGGING = {
 }
 
 # Log name
-API = "api"
+API_LOG_NAME = "api"
 
 
 # status_code

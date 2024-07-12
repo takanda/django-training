@@ -1,10 +1,10 @@
 import logging
 from django.core.management.base import BaseCommand, CommandParser
-from app.settings import API
+from app.settings import API_LOG_NAME
 from api.utils import RequestHandler
 
 
-logger = logging.getLogger(API)
+logger = logging.getLogger(API_LOG_NAME)
 
 class Command(BaseCommand):
     help = "post api command"
