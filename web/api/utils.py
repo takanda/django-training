@@ -1,5 +1,6 @@
 import logging
 import requests
+import json
 from requests.exceptions import HTTPError
 from urllib3.util import Retry
 from requests.adapters import HTTPAdapter
@@ -15,9 +16,10 @@ class LoggingHTTPAdapter(HTTPAdapter):
         try:
             response = super().send(request, **kwargs)
             response.raise_for_status()
+            return response
         except HTTPError as e:
-            logger.warning(f'Response: {e.response.status_code}')
-            logger.warning(f'Response: {e.response.content}')
+            error_msg = e.response.content.decode("utf-8")
+            logger.error(json.loads(error_msg).get("detail"))
         except requests.exceptions.RequestException as e:
             logger.warning(
                 f'Request to {request.url} failed with exception: {e}')

@@ -25,5 +25,5 @@ class Command(BaseCommand):
             response = s.get("http://api:10001/test/api/500/bad_request")
             print("response", response.status_code)
         except AttributeError as e:
-            print(e)
+            print("Response:", e)
             return
