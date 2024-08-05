@@ -4,12 +4,9 @@ import json
 from requests.exceptions import HTTPError
 from urllib3.util import Retry
 from requests.adapters import HTTPAdapter
-from app.settings import (STATUS_OK, STATUS_CREATED, STATUS_BAD_REQUEST, STATUS_UNAUTHORIZED,
-                          STATUS_METHOD_NOT_ALLOWED, STATUS_CONFLICT, STATUS_TIMEOUT,
-                          STATUS_SERVER_ERROR, STATUS_SERVER_UNAVAILABLE, API_LOG_NAME, CONTENT_TYPE)
+from app.settings import (STATUS_TIMEOUT, STATUS_SERVER_ERROR, STATUS_SERVER_UNAVAILABLE, API_LOG_NAME, CONTENT_TYPE)
 
 logger = logging.getLogger(API_LOG_NAME)
-
 
 class LoggingHTTPAdapter(HTTPAdapter):
     def send(self, request, **kwargs):

@@ -23,3 +23,15 @@ services:
     image: redis:latest
     volumes:
       - ./web:/data
+    
+  s3mock:
+    image: adobe/s3mock:latest
+    environment:
+      - initialBuckets=bucket1
+      - debug=true
+      - retainFilesOnExit=true
+      - root=containers3root
+    ports:
+      - 9090:9090
+    volumes:
+      - ./locals3root:/containers3root

@@ -23,7 +23,7 @@ class Command(BaseCommand):
         s = RequestHandler(retry={"count": 2})
         try:
             response = s.get("http://api:10001/test/api/500/bad_request")
-            print("response", response.status_code)
+            return response
         except AttributeError as e:
             print("Response:", e)
             return
