@@ -5,12 +5,12 @@ from aws_test.config import client, AWS_STORAGE_BUCKET_NAME
 
 
 class Command(BaseCommand):
-    help = "s3 file upload command"
+    help = "s3 file download command"
 
     def add_arguments(self, parser: CommandParser) -> None:
         pass
 
     def handle(self, *args, **options):
-        file_path = os.path.join(os.path.dirname(__file__), 'helloS3.txt')
-        response = client.upload_file(file_path, AWS_STORAGE_BUCKET_NAME, "helloS3.hxt")
+        file_path = os.path.join(os.path.dirname(__file__), 'received_helloS3.txt')
+        response = client.download_file(AWS_STORAGE_BUCKET_NAME, "helloS3.hxt", file_path)
         print(response)
