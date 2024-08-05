@@ -1,4 +1,5 @@
 import logging
+import os
 from django.core.management.base import BaseCommand, CommandParser
 from api.config import client, AWS_STORAGE_BUCKET_NAME
 
@@ -10,5 +11,6 @@ class Command(BaseCommand):
         pass
 
     def handle(self, *args, **options):
-        response = client.get_bucket_location(Bucket=AWS_STORAGE_BUCKET_NAME)
+        file_path = os.path.join(os.path.dirname(__file__), 'helloS3.txt')
+        response = client.upload_file(file_path, AWS_STORAGE_BUCKET_NAME, "helloS3.hxt")
         print(response)

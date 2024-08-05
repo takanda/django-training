@@ -1,0 +1,23 @@
+{
+  "id": "d01016ee-0271-4cdf-b714-7d78be5e82b8",
+  "key": "hello.hxt",
+  "size": "9",
+  "modificationDate": "2024-08-05T07:59:02.985Z",
+  "etag": "\"e213550ec0284e49ac6da7f610627769\"",
+  "contentType": "application/octet-stream",
+  "lastModified": 1722844742985,
+  "dataPath": "file:///containers3root/bucket1/d01016ee-0271-4cdf-b714-7d78be5e82b8/binaryData",
+  "userMetadata": {},
+  "tags": [],
+  "legalHold": null,
+  "retention": null,
+  "owner": {
+    "ID": "79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be",
+    "DisplayName": "s3-mock-file-store"
+  },
+  "storeHeaders": {},
+  "encryptionHeaders": {},
+  "checksumAlgorithm": null,
+  "checksum": null,
+  "storageClass": null
+}

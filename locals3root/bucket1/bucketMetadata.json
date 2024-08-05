@@ -5,5 +5,8 @@
   "bucketLifecycleConfiguration": null,
   "objectOwnership": "BUCKET_OWNER_ENFORCED",
   "path": "file:///containers3root/bucket1/",
-  "objects": {}
+  "objects": {
+    "hello.hxt": "d01016ee-0271-4cdf-b714-7d78be5e82b8",
+    "helloS3.hxt": "b74fba00-d81c-4006-864a-86eb70dab2aa"
+  }
 }
