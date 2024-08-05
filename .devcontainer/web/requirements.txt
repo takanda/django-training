@@ -3,3 +3,4 @@ pytest
 celery
 redis
 requests
+boto3
