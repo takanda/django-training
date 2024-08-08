@@ -1,1 +1,13 @@
-{"name":"bucket1","creationDate":"2024-08-05T03:32:15.938Z","objectLockConfiguration":null,"bucketLifecycleConfiguration":null,"objectOwnership":"BUCKET_OWNER_ENFORCED","path":"file:///containers3root/bucket1/","objects":{"hello.hxt":"d01016ee-0271-4cdf-b714-7d78be5e82b8","helloS3.hxt":"b74fba00-d81c-4006-864a-86eb70dab2aa","/app/csv_file/test20240808.csv":"0b997a2d-99dd-413d-ab3a-1b06de124a8d"}}
+{
+  "name": "bucket1",
+  "creationDate": "2024-08-05T03:32:15.938Z",
+  "objectLockConfiguration": null,
+  "bucketLifecycleConfiguration": null,
+  "objectOwnership": "BUCKET_OWNER_ENFORCED",
+  "path": "file:///containers3root/bucket1/",
+  "objects": {
+    "hello.hxt": "d01016ee-0271-4cdf-b714-7d78be5e82b8",
+    "helloS3.hxt": "b74fba00-d81c-4006-864a-86eb70dab2aa",
+    "/app/csv_file/test20240808.csv": "0b997a2d-99dd-413d-ab3a-1b06de124a8d"
+  }
+}
