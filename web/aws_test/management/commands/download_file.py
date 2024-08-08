@@ -1,4 +1,3 @@
-import logging
 import os
 from django.core.management.base import BaseCommand, CommandParser
 from aws_test.config import client, AWS_STORAGE_BUCKET_NAME
