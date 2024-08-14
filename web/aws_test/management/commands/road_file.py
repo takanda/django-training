@@ -21,7 +21,7 @@ class Command(BaseCommand):
         # delete header
         del content_list[0]
         
-        for content in content_list:
-            user_id, birthday = content.split(",")
-            print(user_id)
-            print(birthday)
+        content_list = [content.split(",") for content in content_list]
+
+        print(content_list)
+
